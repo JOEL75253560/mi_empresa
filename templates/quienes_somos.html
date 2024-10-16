@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="quienes-somos">
+    <h1>Quiénes Somos</h1>
+    <p>Somos una empresa con más de 10 años de experiencia en el mercado, dedicada a ofrecer soluciones innovadoras.</p>
+
+    <h2>Misión</h2>
+    <p>Proveer productos y servicios de calidad que mejoren la vida de nuestros clientes.</p>
+
+    <h2>Visión</h2>
+    <p>Ser líderes en innovación y sostenibilidad en el mercado global.</p>
+
+    <h2>Nuestro Equipo</h2>
+    <div class="equipo">
+        <div>
+            <img src="{{ url_for('static', filename='img/equipo1.jpg') }}" alt="Miembro del equipo">
+            <p>Juan Pérez - CEO</p>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='img/equipo2.jpg') }}" alt="Miembro del equipo">
+            <p>María García - Gerente de Operaciones</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
